@@ -11,7 +11,7 @@
 
 Go 언어에 대한 관용적 디자인 및 응용 프로그램 패턴 모음입니다.
 
-## 생성 패턴(Creational Patterns)
+## 생성 패턴 (Creational Patterns)
 
 | Pattern | Description | Status |
 |:-------:|:----------- |:------:|
@@ -21,16 +21,16 @@ Go 언어에 대한 관용적 디자인 및 응용 프로그램 패턴 모음입
 | [객체 풀(Object Pool)](/creational/object-pool.md) | 동일 타입의 객체 인스턴스의 그룹을 만들고 유지| ✔ |
 | [싱글톤(Singleton)](/creational/singleton.md) | 특정 타입을 단일 객체로 인스턴스화 하도록 제한| ✔ |
 
-## Structural Patterns
+## 구조 패턴 (Structural Patterns)
 
 | Pattern | Description | Status |
 |:-------:|:----------- |:------:|
-| [Bridge](/structural/bridge.md) | Decouples an interface from its implementation so that the two can vary independently | ✘ |
-| [Composite](/structural/composite.md) | Encapsulates and provides access to a number of different objects | ✘ |
-| [Decorator](/structural/decorator.md) | Adds behavior to an object, statically or dynamically | ✔ |
-| [Facade](/structural/facade.md) | Uses one type as an API to a number of others | ✘ |
-| [Flyweight](/structural/flyweight.md) | Reuses existing instances of objects with similar/identical state to minimize resource usage | ✘ |
-| [Proxy](/structural/proxy.md) | Provides a surrogate for an object to control it's actions | ✔ |
+| [브리지(Bridge)](/structural/bridge.md) | 독립적으로 변경 가능하도록 인터페이스를 구현으로 부터 분리 | ✘ |
+| [복합(Composite)](/structural/composite.md) | 다양한 객체에 대한 액세스를 캡슐화하여 제공 | ✘ |
+| [데코레이터(Decorator)](/structural/decorator.md) | 객체에 정적 또는 동적 행위를 추가 | ✔ |
+| [퍼사드(Facade)](/structural/facade.md) | 한 유형을 다른 유형의 API로 사용 | ✘ |
+| [플라이웨이트(Flyweight)](/structural/flyweight.md) | 자원 사용을 최소화하기 위해 유사 / 동일한 상태의 기존 객체 인스턴스를 재사용 | ✘ |
+| [프록시(Proxy)](structural/proxy.md) | 오브젝트의 처리를 제어하는 대리자를 제공 | ✔ |
 
 ## Behavioral Patterns
 
@@ -101,7 +101,7 @@ Go 언어에 대한 관용적 디자인 및 응용 프로그램 패턴 모음입
 
 | Pattern | Description | Status |
 |:-------:|:----------- |:------:|
-| [Functional Options](/idiom/functional-options.md) | Allows creating clean APIs with sane defaults and idiomatic overrides | ✔ |
+| [Functional Options](idiom/functional-options.md) | Allows creating clean APIs with sane defaults and idiomatic overrides | ✔ |
 
 ## Anti-Patterns
 

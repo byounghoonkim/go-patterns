@@ -1,11 +1,10 @@
-# Decorator Pattern
-Decorator structural pattern allows extending the function of an existing object dynamically without altering its internals.
+# 데코레이터 패턴 (Decorator Pattern)
+데코레이터 구조 패턴을 사용하면 내부를 변경하지 않고 기존 객체의 기능을 동적으로 확장 할 수 있습니다.
 
-Decorators provide a flexible method to extend functionality of objects.
+데코레이터는 객체의 기능을 확장 할 수있는 유연한 방법을 제공합니다.
 
-## Implementation
-`LogDecorate` decorates a function with the signature `func(int) int` that 
-manipulates integers and adds input/output logging capabilities.
+## 구현
+`LogDecorate`는 정수를 조작하는 `func(int) int` 서명의 함수를 장식(decorate)하고 입/출력 로깅 기능을 추가 합니다.
 
 ```go
 type Object func(int) int
@@ -23,7 +22,7 @@ func LogDecorate(fn Object) Object {
 }
 ```
 
-## Usage
+## 사용법
 ```go
 func Double(n int) int {
     return n * 2
@@ -36,6 +35,6 @@ f(5)
 // Execution is completed with the result 10
 ```
 
-## Rules of Thumb
-- Unlike Adapter pattern, the object to be decorated is obtained by **injection**.
-- Decorators should not alter the interface of an object.
+## 경험 법칙(Rules of Thumb)
+- 어댑터 패턴과 달리 장식 할 대상은 **인젝션**으로 얻습니다.
+- 데코레이터는 객체의 인터페이스를 변경해서는 안됩니다.
