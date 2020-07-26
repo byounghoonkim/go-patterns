@@ -1,8 +1,8 @@
-# Singleton Pattern
+# 싱글톤 패턴(Singleton Pattern)
 
-Singleton creational design pattern restricts the instantiation of a type to a single object.
+싱글톤 생성 디자인 패턴은 타입의 인스턴스화를 단일 객체로 제한합니다.
 
-## Implementation
+## 구현
 
 ```go
 package singleton
@@ -24,7 +24,7 @@ func New() singleton {
 }
 ```
 
-## Usage
+## 사용법
 
 ```go
 s := singleton.New()
@@ -37,6 +37,6 @@ fmt.Println("This is ", s2["this"])
 // This is that
 ```
 
-## Rules of Thumb
+## 경험 법칙(Rules of Thumb)
 
-- Singleton pattern represents a global state and most of the time reduces testability.
+- 싱글톤 패턴은 전역 상태를 나타내며 대부분의 경우 테스트 가능성이 줄어 듭니다.

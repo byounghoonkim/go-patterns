@@ -9,17 +9,17 @@
   </h1>
 </p>
 
-A curated collection of idiomatic design & application patterns for Go language.
+Go 언어에 대한 관용적 디자인 및 응용 프로그램 패턴 모음입니다.
 
-## Creational Patterns
+## 생성 패턴(Creational Patterns)
 
 | Pattern | Description | Status |
 |:-------:|:----------- |:------:|
-| [Abstract Factory](/creational/abstract_factory.md) | Provides an interface for creating families of releated objects | ✘ |
-| [Builder](/creational/builder.md) | Builds a complex object using simple objects | ✔ |
-| [Factory Method](/creational/factory.md) | Defers instantiation of an object to a specialized function for creating instances | ✔ |
-| [Object Pool](/creational/object-pool.md) | Instantiates and maintains a group of objects instances of the same type | ✔ |
-| [Singleton](/creational/singleton.md) | Restricts instantiation of a type to one object | ✔ |
+| [추상 팩토리(Abstract Factory)](/creational/abstract_factory.md) | 관련 객체 패밀리 생성을 위한 인터페이스 제공| ✘ |
+| [빌더(Builder)](/creational/builder.md) | 간단한 객체를 이용해 복잡한 객체를 만듬| ✔ |
+| [팩토리 메소드(Factory Method)](/creational/factory.md) | 객체 인스턴스 생성을 인스턴스 생성을 위한 특수 함수로 지연(defers)| ✔ |
+| [객체 풀(Object Pool)](/creational/object-pool.md) | 동일 타입의 객체 인스턴스의 그룹을 만들고 유지| ✔ |
+| [싱글톤(Singleton)](/creational/singleton.md) | 특정 타입을 단일 객체로 인스턴스화 하도록 제한| ✔ |
 
 ## Structural Patterns
 

@@ -1,9 +1,8 @@
-# Object Pool Pattern
+# 객체 풀 패턴(Object Pool Pattern)
 
-The object pool creational design pattern is used to prepare and keep multiple
-instances according to the demand expectation.
+객체 풀 생성 디자인 패턴은 요청 기대에 따른 여러 인스턴스를 준비하고 유지하는 데 사용됩니다.
 
-## Implementation
+## 구현
 
 ```go
 package pool
@@ -21,9 +20,9 @@ func New(total int) *Pool {
 }
 ```
 
-## Usage
+## 사용법
 
-Given below is a simple lifecycle example on an object pool.
+아래는 객체 풀의 간단한 수명주기 예제입니다.
 
 ```go
 p := pool.New(2)
@@ -39,10 +38,8 @@ default:
 }
 ```
 
-## Rules of Thumb
+## 경험 법칙(Rules of Thumb)
 
-- Object pool pattern is useful in cases where object initialization is more
-  expensive than the object maintenance.
-- If there are spikes in demand as opposed to a steady demand, the maintenance
-  overhead might overweigh the benefits of an object pool.
-- It has positive effects on performance due to objects being initialized beforehand.
+- 개체 풀 패턴은 개체 초기화가 개체 유지 관리보다 비싼 경우에 유용합니다.
+- 꾸준한 요청되는것이 아니라 요청이 급증하는 경우 유지 오버 헤드가 오브젝트 풀의 이점을 초과 할 수 있습니다.
+- 객체가 미리 초기화되어 성능에 긍정적인 영향을 미칩니다.
